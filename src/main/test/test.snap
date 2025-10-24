@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snapshot Test</title>
+</head>
+<body>
+    <h1>Hello, this is a snapshot test!</h1>
+    <p>This is a simple HTML file for plugin testing.</p>
+</body>
+</html>
