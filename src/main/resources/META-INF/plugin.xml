@@ -1,0 +1,29 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.bsg.snapviewer.SnapshotPreviewPlugin</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>Snapshot Html Preview Viewer</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor>Borja Salamanca</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+    <description><![CDATA[
+        Snap Preview Plugin allows developers to open and preview `.snap` files directly within the JetBrains Rider editor as rendered HTML. Ideal for teams working with snapshot-based testing or custom markup formats, this plugin provides a seamless and interactive way to visualize content without leaving the IDE.
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType implementationClass="com.bsg.snapviewer.snapshotpreviewplugin.SnapFileType" name="Snap File" extensions="snap" language="Snap" />
+        <fileEditorProvider implementation="com.bsg.snapviewer.snapshotpreviewplugin.SnapEditorProvider" />
+    </extensions>
+</idea-plugin>
