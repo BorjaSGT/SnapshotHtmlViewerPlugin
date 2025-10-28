@@ -16,6 +16,8 @@
         Snap Preview Plugin allows developers to open and preview `.snap` files directly within the JetBrains Rider editor as rendered HTML. Ideal for teams working with snapshot-based testing or custom markup formats, this plugin provides a seamless and interactive way to visualize content without leaving the IDE.
     ]]></description>
 
+    <version>1.0.1</version>
+
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>

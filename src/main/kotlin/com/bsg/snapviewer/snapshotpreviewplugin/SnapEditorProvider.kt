@@ -17,5 +17,5 @@ class SnapEditorProvider : FileEditorProvider, DumbAware {
     }
 
     override fun getEditorTypeId(): String = "snap-preview-editor"
-    override fun getPolicy(): FileEditorPolicy = FileEditorPolicy.HIDE_DEFAULT_EDITOR
+    override fun getPolicy(): FileEditorPolicy = FileEditorPolicy.PLACE_BEFORE_DEFAULT_EDITOR
 }
